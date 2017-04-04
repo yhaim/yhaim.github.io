@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"微软雅黑"
+}
+ul{
+	margin:0;
+}
+header{
+	background:rgba(0,0,0,0.05);
+	color:#fff;
+}
+nav{
+	/*background:#02DDD3;*/
+	height:50px;
+}
+#banner{
+	/*background:#02DDD3;*/
+	height:700px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+	float:right;
+	
+}
+nav ul li {
+    display: inline-block;/*能够使无序列表横着排列*/
+    line-height: 50px;
+	margin-right:20px;
+	
+}
+nav ul li a {
+    text-decoration: none;
+    line-height: 50px;
+	display:inline-block;/*改变链接为行内元素，可以设置高度*/
+	height:inherit;      /*继承父元素*/
+    color:#fff;         /*字体颜色*/
+	font-family:"微软雅黑";
+}
+.logo a{
+	float:left;
+	font-size:20px;
+	letter-spacing:1px;/*调整字间距*/
+	text-decoration: none;
+    line-height: 50px;
+	display:inline-block;/*改变链接为行内元素，可以设置高度*/
+	height:inherit;      /*继承父元素*/
+    color:#fff;         /*字体颜色*/
+	font-family:"微软雅黑";
+	margin-left:15px;
+}
+
+.inner h1{
+	margin:0;
+	border-bottom:2px #353535 solid;
+	border-top:2px #353535 solid;
+	border-color:#fff;
+	padding:30px 20px ;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:35px;
+}
+.inner p{
+	font-family:"微软雅黑";
+	padding:10px 10px ;
+	}
+.inner{
+	max-width:300px;
+	text-align:center;
+	margin:0 auto;
+	position:relative;
+	top:160px;
+	}
+button{
+	border:none;
+	padding:8px 23px;
+	background:#2C116D;
+	color:#FFFFFF;
+	font-size:18px;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
+	}
+.more{
+	font-size:20px;
+	font-family:"微软雅黑";
+	margin-top:200px;
+	letter-spacing:2px;
+	}
+
+h2{
+	font-size:30px;
+	margin-bottom:20px;
+	letter-spacing:1px;
+}
+.hr{
+	width:60%;
+	height:2px;
+	margin:0 auto;
+}
+.green-section{
+	background:#1AE5C9;
+	color:#fff;
+	text-align:center;
+	padding:100px 0px;
+}
+.wrapper{
+	  	max-width:1080px;
+		margin:0 auto;
+}
+.green-section .hr{
+		background:#11908A;
+		
+	}
+.wrapper p{
+	font-size:18px;
+}
+.icon-group{
+	margin-top:60px;
+}
+.icon{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	background:#2DCA90;
+	transform:rotate(45deg);/*旋转方框四十五度*/
+	margin:20px;
+}
+.gray-section{
+	background:#77B5C1;
+	color:#fff;
+}
+.gray-section .img-section{
+	width:45%;
+}
+.img-section img{
+	width:100%;
+}
+.text-section{
+	width:55%;
+	position: relative;
+    top: 70px;
+    left: 69px;
+}
+.article-preview > div{
+	float:left;
+	font-size:0px;
+}
+.article-preview:nth-child(odd) 
+{
+	background-color:rgba(255,255,255,0.08);}/*奇偶选择器，增加背景颜色蒙版*/
+.article-preview:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+p {
+    font-size: 19px;
+	letter-spacing:1px;
+}
+.sub-heading{
+	font-size:20px;
+	margin-bottom:20px;
+}
+.text-section > *{
+	max-width:90%;
+}
+footer{
+	/*background:#333;*/
+	background:rgba(0,0,0,0.1);
+	color:#fff;
+	min-height:200px;
+	text-align:center;
+}
+.share-group{
+	display:block;
+	width:1080px;
+	margin:0 auto;
+	padding-top:40px;
+	}
+.share-group li{
+	list-style:none;
+	display:inline-block;
+	margin:10px ;
+	}
+.copy{
+	padding:20px;
+	margin:0 auto;
+	margin-top:35px;
+	font-size:15px;
+	}
+.main-wrapper{
+	background:url(../../../sougoubz/SogouWP/Net/WallPaper/415357.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center center;}
+
+
+
+
+
+
+
+
+
+
+
+

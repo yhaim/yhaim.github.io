@@ -1,48 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>用于演示的博客</title>
-    <link rel='stylesheet' href='css/GitHub2.css' type='text/css'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <link rel="stylesheet" href="css/highlight.css">
-    <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/director.min.js"></script>   
-    <script src="js/ractive.min.js"></script>    
-    <script src="js/marked.min.js"></script>    
-    <script src="config.js"></script>
-    <script src="http://static.duoshuo.com/embed.js"></script>
-    <script src="http://apps.bdimg.com/libs/highlight.js/8.6/highlight.min.js"></script>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="../normalize.css">
+<link rel="stylesheet" href="main.css">
 </head>
+	
 <body>
-<div id="header"><h1><a href="#/" class="blog_title">用于演示的博客</a></h1>
-</div>
-<div id="container">
-    <center><img src="loading.gif" alt="loading" class="loading"></center>
-</div>
-<script type="text/ractive" id="listTpl">
-    <ul class="postlist">
-        {{#posts}}
-        <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
-        <span class="datetime">
-        <!--<img src="{{user.avatar_url}}&s=18" class="avatar">.-->
-        <a href="{{user.html_url}}">{{user.login}}</a>.
-        {{formatTime(created_at)}}</span></li>
-        {{/posts}}
-    </ul>
-    {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
-    {{#next}}<a href="#p{{page+1}}" class="next">下一页</a>{{/next}}
-</script>
-<script type="text/ractive" id="detailTpl">
-    {{#post}}
-     <h1>{{title}}</h1>
-     <span class="create_at">
-        <a href="{{user.html_url}}"><img src="{{user.avatar_url}}&s=18" class="avatar">.{{user.login}}</a>.
-        发表于 {{formatTime(created_at)}}</span>
-     <div class="content">{{{markdown2HTML(body)}}}</div>
-    {{/post}}
-</script>
-<script src="app.js"></script>
+  <div class="main-wrapper">
+	<header><!--页头开始-->
+    	<nav><!--nav开始-->
+        	<div class="logo"><a href="#">yhaim</a></div>
+     		<ul>
+            	
+                <li><a href="#">首页</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">文章</a></li>
+            </ul>
+        </nav><!--nav结束-->
+        <div id="banner">
+        	<div class="inner">
+            	<h1>haim</h1>
+                <p>yunhaiming's first blog</p>
+                	<button>read</button>
+                    	<div class="more">更多</div>
+            </div>
+        </div>
+    </header><!--页头结束-->
+    <div class="content"><!--内容开始-->
+    	<section class="green-section">
+        	<div class="wrapper">
+            	<div>
+                	<h2>Hello!wrold!</h2>
+                    	<div class="hr"></div>
+                    <p >欢迎访问恽海明的首张博客</p>
+                </div>
+                	<div class="icon-group">
+                    	<span class="icon">图标1</span>
+                        <span class="icon">图标2</span>
+                        <span class="icon">图标3</span>
+                    </div>
+            </div>
+        </section>
+        <section class="gray-section">
+        	<div class="article-preview">
+            	<div class="img-section">
+                	<img src="image/2.jpg"/>
+                </div>
+                <div class="text-section">
+                	<h2>第一个标题</h2>
+                    	<div class="sub-heading">
+                        	制作的心得
+                        </div>
+                    	<p>关于初衷</p>
+                </div>
+            </div>
+            <div class="article-preview">
+                <div class="text-section">
+                	<h2>第二个标题</h2>
+                    	<div class="sub-heading">
+                        	最近的心态
+                        </div>
+                    	<p>关于最近事态的想法</p>
+                </div>
+                 <div class="img-section">
+                       <img src="image/3.jpg"/>
+                </div>
+            </div>
+            <div class="article-preview">
+            	<div class="img-section">
+                	<img src="image/4.jpg"/>
+                </div>
+                <div class="text-section">
+                	<h2>第三个标题</h2>
+                    	<div class="sub-heading">
+                        	说一些目标
+                        </div>
+                    	<p>关于人生理想</p>
+                </div>
+            </div>
+        </section>
+        <section class="purple-section"></section>
+    </div><!--内容结束-->
+    <footer><!--页脚开始-->
+    	<ul class="share-group">
+        	<li>图标链接1</li>
+            <li>图标链接2</li>
+            <li>图标链接3</li>
+            <li>图标链接4</li>
+            <li>图标链接5</li>
+        </ul>
+        	<div class="copy">
+            &copyyhaim
+            </div>
+    </footer><!--页脚结束-->
+   </div>
 </body>
 </html>
