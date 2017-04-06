@@ -19,6 +19,9 @@ nav{
 	/*background:#02DDD3;*/
 	height:700px;
 }
+.article #banner{
+	height:250px;
+	}
 nav ul {
     list-style: none;
     margin: 0;
@@ -61,6 +64,9 @@ nav ul li a {
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-size:35px;
 }
+.article h1{
+	border:none;
+}
 .inner p{
 	font-family:"微软雅黑";
 	padding:10px 10px ;
@@ -72,6 +78,9 @@ nav ul li a {
 	position:relative;
 	top:160px;
 	}
+.article .inner{
+	top:40px;
+}
 button{
 	border:none;
 	padding:8px 23px;
@@ -197,6 +206,7 @@ footer{
 }
 
 .mask{
+	display:none;
 	position:fixed;
 	top:0;
 	left:0;
@@ -206,14 +216,16 @@ footer{
 }
 
 .sidebar{
+	
 	position:fixed;
 	top:0;
-	right:0;
 	bottom:0;
+	right:-300px;
 	width:300px;
 	background:#333;
 	color:#fff;
-	padding-top:20px;
+	padding:20px 0;
+	transition:right 0.5;
 	}
 .sidebar ul{
 	list-style:none;
@@ -230,11 +242,33 @@ footer{
 .sidebar ul a:hover{
 	background:#666;
 }
-
-
-
-
-
+.back-to-top{
+	position:fixed;
+	bottom:30px;
+	right:30px;
+	border:1px solid #999;
+	background:rgba(0,0,0,0.4)
+}
+.content_wrapper
+{
+	width:1000px;
+	margin:0 auto;
+}
+.content{
+	background:rgba(0,0,0,0.3)}
+article{
+	color:#FFF;
+	line-height:2;
+	padding:10px 0;
+	padding-bottom:20px;
+	letter-spacing:1.5px;
+	}
+.article_info{
+	font-size:14px;
+	color:#CCC;
+	padding:15px 0;
+	letter-spacing:2px;
+}
 
 
 
