@@ -206,7 +206,7 @@ footer{
 	overflow:hidden;/*能让页面没有滚动条*/
 }
 
-/*.mask{
+.mask{
 	display:none;
 	position:fixed;
 	top:0;
@@ -215,8 +215,8 @@ footer{
 	right:0;
 	background:rgba(0,0,0,0.2);
 }
-*/
-.sidebar{
+
+#sidebar{
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -227,19 +227,19 @@ footer{
 	padding:20px 0;
 	transition:right 0.5;
 	}
-.sidebar ul{
+#sidebar ul{
 	list-style:none;
 	margin:0;
 	padding:0;
 	}
-.sidebar ul a{
+#sidebar ul a{
 	color:#FFF;
 	padding:10px 20px;
 	width:100%;
 	text-decoration:none;
 	display:inline-block;
 }
-.sidebar ul a:hover{
+#sidebar ul a:hover{
 	background:#666;
 }
 .back-to-top{
