@@ -9,7 +9,7 @@ ul{
 }
 header{
 	background:rgba(0,0,0,0.05);
-	color:#fff;
+	color:#fff;  
 }
 nav{
 	/*background:#02DDD3;*/
@@ -42,6 +42,11 @@ nav ul li a {
     color:#fff;         /*字体颜色*/
 	font-family:"微软雅黑";
 }
+
+ul a:hover,ul a:active{
+color:#000;display:block;font-size:24px
+}
+
 .logo a{
 	float:left;
 	font-size:20px;
@@ -54,7 +59,9 @@ nav ul li a {
 	font-family:"微软雅黑";
 	margin-left:15px;
 }
-
+.logo a:hover,.logo a:active{
+color:#FFF;display:block;font-size:30px
+}
 .inner h1{
 	margin:0;
 	border-bottom:2px #353535 solid;
